@@ -28,13 +28,13 @@
     },
     {
       icon: 'import_contacts',
-      label: 'Stories',
+      label: 'Todos',
       separator: true,
       link: '/todos'
     },
     {
       icon: 'spellcheck',
-      label: 'Synonyms',
+      label: 'Stories',
       separator: false,
       link: '/stories'
     },

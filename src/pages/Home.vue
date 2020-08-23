@@ -36,7 +36,7 @@
               :key="index"
               class="row"
             >
-                <AudioPlay v-bind:audio="word.audio" color="brown" class="col-1"/>
+                <AudioPlay v-bind:audio="word.audio" color="brown" class="col-1 col-xs-2"/>
                 <div class="col 11">
                     <p class="text-subtitle1 text-light-blue-13 phrase">{{ word.text }}}</p>
                 </div>
