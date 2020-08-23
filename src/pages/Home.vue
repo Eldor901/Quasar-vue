@@ -114,8 +114,10 @@ export default {
   methods: {
     onSubmit() {
       this.foundWord  = 'NOTFOUND';
+      let searchWord = this.name.trim().toLowerCase();
+      console.log(searchWord + "sad")
       for (let word in wordList) {
-        if (wordList[word].word === this.name) {
+        if (wordList[word].word === searchWord) {
           this.foundWord = wordList[word];
         }
       }
