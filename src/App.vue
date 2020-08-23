@@ -1,11 +1,24 @@
 <template>
   <div id="q-app">
-    <router-view />
+    <component :is="layout">
+        <router-view />
+    </component>
   </div>
 </template>
 
 <script>
+import EmptyLayout from "./layouts/EmptyLayout";
+import MainLayout from "./layouts/MainLayout";
+
 export default {
-  name: 'App'
+  name: 'App',
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || 'empty')+ '-layout'
+    }
+  },
+  components: {
+    EmptyLayout, MainLayout
+  }
 }
 </script>

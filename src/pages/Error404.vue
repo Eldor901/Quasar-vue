@@ -17,7 +17,11 @@
 </template>
 
 <script>
-export default {
-  name: 'Error404'
-}
+    export default {
+        name: "Error404.vue"
+    }
 </script>
+
+<style scoped>
+
+</style>
